@@ -21,7 +21,6 @@ body {
 .todo-item {
   width: 100%;
   display: flex;
-  justify-content: space-between;
   border-bottom: 2px solid #f1f2f5;
   align-items: center;
 }
@@ -29,6 +28,11 @@ body {
 .todo-item,
 .add-new {
   min-height: 66px;
+  color: #757575;
+}
+
+input[type="checkbox"] {
+  margin-right: 2rem;
 }
 
 .todo-item:last-of-type {
@@ -82,6 +86,10 @@ body {
   outline: none;
 }
 
+.no-outline::placeholder {
+  font-style: italic;
+}
+
 .check-description {
   display: flex;
   align-content: center;
@@ -108,12 +116,6 @@ textarea {
   padding-top: 0.5rem;
 }
 
-.fa-square,
-.fa-check {
-  cursor: pointer;
-  padding: 0.5rem 1rem 1rem 1rem;
-}
-
 .fa-level-down-alt {
   transform: rotate(90deg);
   position: absolute;
@@ -126,20 +128,7 @@ textarea {
 .fa-ellipsis-v,
 .fa-trash-alt {
   padding: 1rem;
-}
-
-.fa-sync:hover {
-  color: rgb(105, 223, 105);
-  transition: 0.4s;
-  transform: rotate(360deg);
-  cursor: pointer;
-}
-
-.fa-trash-alt:hover {
-  color: rgb(212, 58, 58);
-  transform: scale(1.25);
-  transition: all 0.2s;
-  cursor: pointer;
+  color: #757575;
 }
 
 .hide {
@@ -150,4 +139,8 @@ textarea {
   padding-left: 1rem;
   font-weight: 600;
   font-size: 1.4rem;
+}
+
+.item-container {
+  padding: 10px;
 }
