@@ -1,11 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="./Public/images/logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
   <h3><b>Awesome Book</b></h3>
-
 </div>
 
 # 📗 Table of Contents
@@ -32,7 +28,7 @@
 
 # 📖 [Awesome Book] <a name="about-project"></a>
 
-**Awesome Books** is a online store for storing names, author and description of books
+**Todo Application** is an application for written down activities or goals, which one is planning to achieve late time.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -45,6 +41,7 @@
     <li><a href="">CSS</a></li>
     <li><a href="">JAVASCRIPT</a></li>
     <li><a href="">LINTERS</a></li>
+    <li><a href="">WEBPACK</a></li>
   </ul>
 </details>
 
@@ -57,15 +54,16 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Add Book]**
-- **[Display books]**
-- **[Remove book]**
+- **[Add Activity]**
+- **[Display Activities]**
+- **[Delete Activities]**
+- **[Edit Activities]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://peter-dumbari.github.io/AwesomeBookES6/)
+- [Live Demo Link](https://peter-dumbari.github.io/AwesomeBookES6/) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,6 +108,10 @@ To run the project on your computer, execute the following command :
   npx eslint .
 ```
 
+```sh
+  npm start
+```
+
 ### Deployment
 
 You can deploy this project using:
@@ -129,8 +131,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Edit book]**
-- [ ] **[Popup Page]**
+- [ ] **[Drag item position]**
 - [ ] **[Upload Image]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,7 +159,7 @@ I would like to thank Microverse for this activity🤗
 
 - **[How will this project be of benefit to me?]**
 
-  - [This project will definitely help in storing the names, author and the description of your books free of charge]
+  - [This project will definitely help you in keeping and reminding you of what to do]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
