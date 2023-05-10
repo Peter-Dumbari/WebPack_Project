@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Awesome Book</b></h3>
+  <h3><b>Todo Application</b></h3>
 </div>
 
 # 📗 Table of Contents
@@ -26,7 +26,7 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Awesome Book] <a name="about-project"></a>
+# 📖 [Todo Application] <a name="about-project"></a>
 
 **Todo Application** is an application for written down activities or goals, which one is planning to achieve late time.
 
@@ -64,8 +64,6 @@
 <!-- ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://peter-dumbari.github.io/AwesomeBookES6/) -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
