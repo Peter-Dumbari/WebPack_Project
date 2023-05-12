@@ -1,6 +1,7 @@
 import Views from './modules/Views.js';
 import Database from './modules/Database.js';
 import './style.css';
+import ListStatus from './modules/ListStatus.js';
 
 document.addEventListener('DOMContentLoaded', Views.DisplayAllActivities);
 
@@ -28,4 +29,15 @@ document.querySelector('#full-list').addEventListener('keypress', (event) => {
     Database.UpdateActivity(event.target);
     window.location.reload();
   }
+});
+
+document.querySelector('#full-list').addEventListener('change', (e) => {
+  if (e.target.classList.contains('checkbox')) {
+    ListStatus.completedStatusChecker(e.target);
+  }
+});
+
+document.getElementById('clear-btn').addEventListener('click', () => {
+  ListStatus.DeleteCompletedActivities();
+  window.location.reload();
 });
