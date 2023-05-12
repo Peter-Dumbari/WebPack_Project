@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -8,35 +9,116 @@ body {
   background-color: #f1f2f5;
 }
 
-.main-list {
+.list-container {
   width: 40%;
   background-color: #fff;
-  margin: 2rem auto;
   border-radius: 3px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-.today,
-.add-new,
-.todo-item {
-  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
   display: flex;
-  border-bottom: 2px solid #f1f2f5;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-.todo-item,
-.add-new {
-  min-height: 66px;
-  color: #757575;
+.bi-journal-text {
+  font-size: 5rem;
+  color: rgb(29, 125, 185);
+  margin: 15px auto;
 }
 
-input[type="checkbox"] {
-  margin-right: 2rem;
+#list-heading {
+  font-size: 1.9rem;
+  color: rgba(74, 71, 71, 0.747);
+  font-weight: 900;
+  margin-bottom: 10px;
 }
 
-.todo-item:last-of-type {
-  border-bottom: 2px solid #fff;
+#full-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#todo-form {
+  width: 90%;
+}
+
+#input-list {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+
+#input-list::placeholder {
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  width: 90%;
+  font-size: 15px;
+  height: 38px;
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1px solid gray;
+  margin-top: 10px;
+}
+
+.checkbox {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.editIcon {
+  position: absolute;
+  font-size: 1.2rem;
+  right: 40px;
+  cursor: pointer;
+}
+
+.deleteIcon {
+  position: absolute;
+  font-size: 1.2rem;
+  right: 5px;
+  cursor: pointer;
+}
+
+#edit-form {
+  outline: none;
+  border: none;
+}
+
+.edit-list {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+#clear-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(186, 185, 185);
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+span {
+  margin-left: 15px;
+  font-size: 20px;
 }
 
 .today-content {
@@ -44,38 +126,12 @@ input[type="checkbox"] {
   justify-content: space-between;
   align-items: center;
   height: 66px;
-  border-bottom: 2px solid #f1f2f5;
+  width: 90%;
 }
 
 .white-height {
   display: flex;
   min-height: 4rem;
-}
-
-.clear {
-  height: 68px;
-  line-height: 68px;
-  background-color: #e8e8e9;
-  text-align: center;
-}
-
-#clear-text {
-  text-decoration: none;
-  color: rgb(24, 24, 24);
-  padding: 0.5rem;
-}
-
-#clear-text:hover {
-  color: #36b0e9;
-  transform: scale(1.4);
-  transition: 0.4s;
-}
-
-#new-item {
-  font-size: 1rem;
-  line-height: 3rem;
-  border: none;
-  width: 90%;
 }
 
 .no-outline {
@@ -88,59 +144,4 @@ input[type="checkbox"] {
 
 .no-outline::placeholder {
   font-style: italic;
-}
-
-.check-description {
-  display: flex;
-  align-content: center;
-  column-gap: 0.5rem;
-  width: 90%;
-}
-
-textarea {
-  outline: none;
-  border: none;
-  resize: none;
-  overflow: hidden;
-  width: 100%;
-  line-height: 1.5rem;
-  word-wrap: break-word;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-size: 1rem;
-}
-
-.view {
-  width: 100%;
-  margin: 0 0.5rem;
-  padding-top: 0.5rem;
-}
-
-.fa-level-down-alt {
-  transform: rotate(90deg);
-  position: absolute;
-  right: calc(30%);
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.fa-sync,
-.fa-ellipsis-v,
-.fa-trash-alt {
-  padding: 1rem;
-  color: #757575;
-}
-
-.hide {
-  display: none;
-}
-
-.heading {
-  padding-left: 1rem;
-  font-weight: 600;
-  font-size: 1.4rem;
-}
-
-.item-container {
-  padding: 10px;
 }
