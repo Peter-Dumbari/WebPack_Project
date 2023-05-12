@@ -2,17 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Lifesoft Todo app</title>
 </head>
 
 <body>
-    <div class="list_container">
-
+    <div class="main-list">
+        <div class="list-container">
+            <div class="today-content white-height">
+                <span class="heading">Today's To Do list</span>
+                <i class="fas fa-sync"></i>
+            </div>
+            <ul id="full-list">
+                <form class="add-new white-height" id="todo-form">
+                    <input class="no-outline" maxlength="128" id="input-list" type="text"
+                        placeholder="Add to your list ..." />
+                    <i class="fas fa-level-down-alt"></i>
+                </form>
+            </ul>
+            <button id="clear-btn" class="clear-btn">Clear the list</button>
+        </div>
     </div>
     <script src="../dist/index.bundle.js"></script>
     <script src="https://kit.fontawesome.com/2347fe76cf.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
